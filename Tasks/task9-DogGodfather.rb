@@ -1,12 +1,12 @@
 class Dog #Dogクラスを作ります。
-  #initializeメソッドによりクラス変数@nameに引数nameを渡します。
+  #initializeメソッドによりnameプロパティに引数nameを渡します。
   def initialize(name)
-    @name = name
+    self.name = name
   end
 
   def output
-    #クラス変数@nameを呼び出します。
-    puts "ワン！僕の名前は#{@name}です！"
+    #nameプロパティを呼び出します。
+    puts "ワン！僕の名前は#{self.name}です！"
   end
 end
 #犬の名前入力を求めます。
